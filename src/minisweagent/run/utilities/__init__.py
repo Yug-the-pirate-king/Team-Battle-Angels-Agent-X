@@ -1,1 +1,1 @@
-"""Utility modules for mini-SWE-agent (config management, inspector, etc.)."""
+"""Utility modules for Team Battle Angels - Agent X."""

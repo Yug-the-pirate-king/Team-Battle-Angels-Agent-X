@@ -2,7 +2,7 @@
 """
 Simple trajectory inspector for browsing agent conversation trajectories.
 
-More information about the usage: [bold green] https://mini-swe-agent.com/latest/usage/inspector/ [/bold green].
+Powered by Team Battle Angels - Agent X.
 """
 
 import json

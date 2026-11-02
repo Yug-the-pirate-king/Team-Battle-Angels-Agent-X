@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2025 Kilian A. Lieret and Carlos E. Jimenez
+Copyright (c) 2026 Team Battle Angels
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

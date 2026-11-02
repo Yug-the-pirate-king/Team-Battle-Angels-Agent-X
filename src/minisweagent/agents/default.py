@@ -1,4 +1,4 @@
-"""Basic agent class. See https://mini-swe-agent.com/latest/advanced/control_flow/ for visual explanation
+"""Agent loop implementation for Team Battle Angels - Agent X.
 or https://minimal-agent.com for a tutorial on the basic building principles.
 """
 

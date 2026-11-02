@@ -1,4 +1,4 @@
-"""Agent implementations for mini-SWE-agent."""
+"""Agent implementations for Team Battle Angels - Agent X."""
 
 import copy
 import importlib
