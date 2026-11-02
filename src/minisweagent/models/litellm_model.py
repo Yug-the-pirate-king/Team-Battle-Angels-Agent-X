@@ -53,6 +53,7 @@ class LitellmModel:
         litellm.exceptions.PermissionDeniedError,
         litellm.exceptions.ContextWindowExceededError,
         litellm.exceptions.AuthenticationError,
+        ModuleNotFoundError,
         KeyboardInterrupt,
     ]
 

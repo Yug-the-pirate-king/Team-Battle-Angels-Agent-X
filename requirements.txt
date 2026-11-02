@@ -13,4 +13,5 @@ openai
 litellm>=1.75.5
 textual
 pytest
+mcp
 

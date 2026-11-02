@@ -40,6 +40,7 @@ dependencies = [
     "textual",
     "prompt_toolkit",
     "openai",
+    "mcp",
 ]
 
 [project.optional-dependencies]
