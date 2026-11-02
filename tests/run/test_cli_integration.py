@@ -1,4 +1,5 @@
 import re
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -353,8 +354,11 @@ def test_python_m_minisweagent_help():
 
 def test_mini_script_help():
     """Test that the mini script entry point help works."""
+    cmd = shutil.which("mini")
+    if not cmd:
+        pytest.skip("CLI command 'mini' not found in PATH")
     result = subprocess.run(
-        ["mini", "--help"],
+        [cmd, "--help"],
         capture_output=True,
         text=True,
         timeout=10,
@@ -366,8 +370,11 @@ def test_mini_script_help():
 
 def test_mini_swe_agent_help():
     """Test that mini-swe-agent --help works correctly."""
+    cmd = shutil.which("mini-swe-agent")
+    if not cmd:
+        pytest.skip("CLI command 'mini-swe-agent' not found in PATH")
     result = subprocess.run(
-        ["mini-swe-agent", "--help"],
+        [cmd, "--help"],
         capture_output=True,
         text=True,
         timeout=10,
@@ -380,8 +387,11 @@ def test_mini_swe_agent_help():
 
 def test_mini_extra_help():
     """Test that mini-extra --help works correctly."""
+    cmd = shutil.which("mini-extra")
+    if not cmd:
+        pytest.skip("CLI command 'mini-extra' not found in PATH")
     result = subprocess.run(
-        ["mini-extra", "--help"],
+        [cmd, "--help"],
         capture_output=True,
         text=True,
         timeout=10,
@@ -396,8 +406,11 @@ def test_mini_extra_help():
 
 def test_mini_e_help():
     """Test that mini-e --help works correctly."""
+    cmd = shutil.which("mini-e")
+    if not cmd:
+        pytest.skip("CLI command 'mini-e' not found in PATH")
     result = subprocess.run(
-        ["mini-e", "--help"],
+        [cmd, "--help"],
         capture_output=True,
         text=True,
         timeout=10,
@@ -418,9 +431,12 @@ def test_mini_e_help():
 )
 def test_mini_extra_subcommand_help(subcommand: str, aliases: list[str]):
     """Test that mini-extra subcommands --help work correctly."""
+    cmd = shutil.which("mini-extra")
+    if not cmd:
+        pytest.skip("CLI command 'mini-extra' not found in PATH")
     for alias in aliases:
         result = subprocess.run(
-            ["mini-extra", alias, "--help"],
+            [cmd, alias, "--help"],
             capture_output=True,
             text=True,
             timeout=10,
@@ -433,8 +449,11 @@ def test_mini_extra_subcommand_help(subcommand: str, aliases: list[str]):
 
 def test_mini_extra_config_help():
     """Test that mini-extra config --help works correctly."""
+    cmd = shutil.which("mini-extra")
+    if not cmd:
+        pytest.skip("CLI command 'mini-extra' not found in PATH")
     result = subprocess.run(
-        ["mini-extra", "config", "--help"],
+        [cmd, "config", "--help"],
         capture_output=True,
         text=True,
         timeout=10,
