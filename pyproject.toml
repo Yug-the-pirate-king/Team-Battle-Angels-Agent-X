@@ -1,0 +1,95 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "battle-angels-agent"
+dynamic = ["version"]
+description = "Team Battle Angels - Agent X: An autonomous, lightweight AI software engineering agent for hackathons"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE.md"}
+keywords = ["ai-agent", "software-engineering", "hackathon", "battle-angels", "coding-assistant"]
+authors = [
+    {name = "Team Battle Angels"},
+]
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+dependencies = [
+    "pyyaml",
+    "requests",
+    "jinja2",
+    "pydantic >= 2.0",
+    "litellm >= 1.75.5, != 1.82.7, != 1.82.8",
+    "tenacity",
+    "rich",
+    "python-dotenv",
+    "typer",
+    "platformdirs",
+    "textual",
+    "prompt_toolkit",
+    "openai",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "pytest-asyncio",
+    "ruff",
+]
+
+[project.scripts]
+battle-angels = "minisweagent.run.mini:app"
+agent-x = "minisweagent.run.mini:app"
+mini = "minisweagent.run.mini:app"
+mini-swe-agent = "minisweagent.run.mini:app"
+mini-extra = "minisweagent.run.utilities.mini_extra:main"
+mini-e = "minisweagent.run.utilities.mini_extra:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = {attr = "minisweagent.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["minisweagent*"]
+
+[tool.setuptools.package-data]
+minisweagent = ["config/**/*"]
+
+[tool.ruff]
+exclude = [
+    ".git",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".venv",
+    ".vscode",
+    "build",
+    "dist",
+    "tests/test_data",
+]
+line-length = 120
+indent-width = 4
+target-version = "py310"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+markers = [
+    "slow: marks tests as slow (deselect with '-k \"not slow\"')",
+]

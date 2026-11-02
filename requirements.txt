@@ -1,0 +1,16 @@
+# Team Battle Angels - Agent X Core Requirements
+pydantic>=2.0
+pyyaml
+requests
+jinja2
+rich
+typer
+platformdirs
+python-dotenv
+tenacity
+prompt_toolkit
+openai
+litellm>=1.75.5
+textual
+pytest
+
