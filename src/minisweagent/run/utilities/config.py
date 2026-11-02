@@ -57,9 +57,9 @@ def prompt(*args, **kwargs):
 
 def configure_if_first_time():
     if not os.getenv("MSWEA_CONFIGURED"):
-        console.print(Rule())
+        console.print(Rule(characters="="))
         setup()
-        console.print(Rule())
+        console.print(Rule(characters="="))
 
 
 @app.command()

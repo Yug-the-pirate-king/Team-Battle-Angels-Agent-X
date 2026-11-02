@@ -41,6 +41,13 @@ console = Console(highlight=False)
 app = typer.Typer(rich_markup_mode="rich")
 
 
+def _unwrap_option(val: Any, fallback: Any = None) -> Any:
+    """Unwrap Typer OptionInfo when main() is invoked directly as a Python function."""
+    if isinstance(val, typer.models.OptionInfo):
+        return fallback if val.default is ... else val.default
+    return val
+
+
 # fmt: off
 @app.command(help=_HELP_TEXT)
 def main(
@@ -56,6 +63,20 @@ def main(
     exit_immediately: bool = typer.Option(False, "--exit-immediately", help="Exit immediately when the agent completes rather than confirming.", rich_help_panel="Advanced"),
 ) -> Any:
     # fmt: on
+    model_name = _unwrap_option(model_name, None)
+    model_class = _unwrap_option(model_class, None)
+    agent_class = _unwrap_option(agent_class, None)
+    environment_class = _unwrap_option(environment_class, None)
+    task = _unwrap_option(task, None)
+    yolo = _unwrap_option(yolo, False)
+    cost_limit = _unwrap_option(cost_limit, None)
+    config_spec = _unwrap_option(config_spec, [str(DEFAULT_CONFIG_FILE)])
+    output = _unwrap_option(output, DEFAULT_OUTPUT_FILE)
+    exit_immediately = _unwrap_option(exit_immediately, False)
+
+    if isinstance(config_spec, (str, Path)):
+        config_spec = [str(config_spec)]
+
     configure_if_first_time()
 
     # Build the config from the command line arguments

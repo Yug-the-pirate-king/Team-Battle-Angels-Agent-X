@@ -33,9 +33,12 @@ def run_demo():
         )
     )
 
-    has_live_key = any(
-        os.getenv(k)
-        for k in ["OPENAI_API_KEY", "ANTHROPIC_API_KEY", "GEMINI_API_KEY", "OPENROUTER_API_KEY"]
+    has_live_key = (
+        "--offline" not in sys.argv
+        and any(
+            os.getenv(k)
+            for k in ["OPENAI_API_KEY", "ANTHROPIC_API_KEY", "GEMINI_API_KEY", "OPENROUTER_API_KEY"]
+        )
     )
 
     demo_dir = Path(tempfile.mkdtemp(prefix="battle_angels_demo_"))
@@ -76,6 +79,7 @@ def run_demo():
             task=f"Inspect {demo_dir}/test_math.py and fix the issue in {demo_dir}/math_lib.py so all tests pass.",
             yolo=True,
             output=demo_dir / "trajectory.json",
+            exit_immediately=True,
         )
     else:
         console.print("[bold yellow]No API key detected in environment. Running in Deterministic Demo Mode...[/bold yellow]")
