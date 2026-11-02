@@ -1,1 +1,1 @@
-"""Utility modules for Team Battle Angels - Agent X."""
+"""Utility modules for Team Battle Angels - Alita."""

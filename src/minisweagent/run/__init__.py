@@ -1,1 +1,1 @@
-"""Run scripts for Team Battle Angels - Agent X."""
+"""Run scripts for Team Battle Angels - Alita."""

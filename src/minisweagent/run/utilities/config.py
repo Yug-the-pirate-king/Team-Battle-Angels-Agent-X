@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-"""Utility to manage the global config file for Battle Angels Agent X.
+"""Utility to manage the global config file for Battle Angels Alita.
 
 You can also directly edit the `.env` file in the config directory.
 
@@ -31,7 +31,7 @@ app = Typer(
 console = Console(highlight=False)
 
 
-_SETUP_HELP = """[bold cyan]Team Battle Angels - Agent X Configuration[/bold cyan]
+_SETUP_HELP = """[bold cyan]Team Battle Angels - Alita Configuration[/bold cyan]
 
 To get started, set up your model selection and API keys.
 You can also set environment variables directly or create a .env file.

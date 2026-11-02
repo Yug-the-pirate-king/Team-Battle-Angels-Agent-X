@@ -1,4 +1,4 @@
-"""Configuration files and utilities for Battle Angels Agent X."""
+"""Configuration files and utilities for Battle Angels Alita."""
 
 import json
 import os

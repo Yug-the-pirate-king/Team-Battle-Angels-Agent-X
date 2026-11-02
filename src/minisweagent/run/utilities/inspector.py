@@ -2,7 +2,7 @@
 """
 Simple trajectory inspector for browsing agent conversation trajectories.
 
-Powered by Team Battle Angels - Agent X.
+Powered by Team Battle Angels - Alita.
 """
 
 import json

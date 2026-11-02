@@ -399,7 +399,7 @@ def test_mini_extra_help():
 
     assert result.returncode == 0
     clean_output = strip_ansi_codes(result.stdout)
-    assert "Agent X Utilities" in clean_output
+    assert "Alita Utilities" in clean_output
     assert "config" in clean_output
     assert "inspect" in clean_output
 
@@ -418,7 +418,7 @@ def test_mini_e_help():
 
     assert result.returncode == 0
     clean_output = strip_ansi_codes(result.stdout)
-    assert "Agent X Utilities" in clean_output
+    assert "Alita Utilities" in clean_output
 
 
 @pytest.mark.parametrize(

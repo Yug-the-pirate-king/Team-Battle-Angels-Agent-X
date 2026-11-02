@@ -3,13 +3,13 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "battle-angels-agent"
+name = "alita-agent"
 dynamic = ["version"]
-description = "Team Battle Angels - Agent X: An autonomous, lightweight AI software engineering agent for hackathons"
+description = "Team Battle Angels - Alita: An autonomous, lightweight AI software engineering agent for hackathons"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {file = "LICENSE.md"}
-keywords = ["ai-agent", "software-engineering", "hackathon", "battle-angels", "coding-assistant"]
+keywords = ["ai-agent", "software-engineering", "hackathon", "battle-angels", "alita", "coding-assistant"]
 authors = [
     {name = "Team Battle Angels"},
 ]
@@ -52,16 +52,16 @@ dev = [
 
 [project.scripts]
 battle-angels = "minisweagent.run.mini:app"
-agent-x = "minisweagent.run.mini:app"
+alita = "minisweagent.run.mini:app"
 mini = "minisweagent.run.mini:app"
 mini-swe-agent = "minisweagent.run.mini:app"
 mini-extra = "minisweagent.run.utilities.mini_extra:main"
 mini-e = "minisweagent.run.utilities.mini_extra:main"
 
 [project.urls]
-Homepage = "https://github.com/Yug-the-pirate-king/Team-Battle-Angels---Agent-X"
-Repository = "https://github.com/Yug-the-pirate-king/Team-Battle-Angels---Agent-X"
-"Bug Tracker" = "https://github.com/Yug-the-pirate-king/Team-Battle-Angels---Agent-X/issues"
+Homepage = "https://github.com/Yug-the-pirate-king/Team-Battle-Angels---alita"
+Repository = "https://github.com/Yug-the-pirate-king/Team-Battle-Angels---alita"
+"Bug Tracker" = "https://github.com/Yug-the-pirate-king/Team-Battle-Angels---alita/issues"
 
 [tool.setuptools]
 include-package-data = true

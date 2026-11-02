@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Team Battle Angels - Agent X: Hackathon Live Demo Runner.
+"""Team Battle Angels - Alita: Hackathon Live Demo Runner.
 
-This script demonstrates Agent X autonomously fixing a software bug.
+This script demonstrates Alita autonomously fixing a software bug.
 If an API key is configured (OPENAI_API_KEY, etc.), it uses the live LLM.
 Otherwise, it automatically runs in deterministic demonstration mode so
 hackathon judges can evaluate the workflow immediately with zero setup!
@@ -27,7 +27,7 @@ console = Console()
 def run_demo():
     console.print(
         Panel.fit(
-            "[bold cyan]TEAM BATTLE ANGELS - AGENT X[/bold cyan]\n"
+            "[bold cyan]Team Battle Angels - Alita[/bold cyan]\n"
             "[bold yellow]Hackathon Autonomous Software Engineering Demo[/bold yellow]",
             border_style="cyan",
         )
@@ -66,10 +66,10 @@ def run_demo():
 
     console.print(f"[bold green]Created demo workspace at:[/bold green] {demo_dir}")
     console.print("[dim]1. Problem: test_math.py fails because safe_divide(10, 0) raises ZeroDivisionError.[/dim]")
-    console.print("[dim]2. Task: Agent X will read code, reproduce bug, patch math_lib.py, and verify.[/dim]\n")
+    console.print("[dim]2. Task: Alita will read code, reproduce bug, patch math_lib.py, and verify.[/dim]\n")
 
     if has_live_key:
-        console.print("[bold green]API key detected! Running live Agent X...[/bold green]")
+        console.print("[bold green]API key detected! Running live Alita...[/bold green]")
         from minisweagent.run.mini import main as run_mini
 
         run_mini(
@@ -116,7 +116,7 @@ def run_demo():
         agent = DefaultAgent(
             model=model,
             env=env,
-            system_template="You are Battle Angels Agent X.",
+            system_template="You are Battle Angels Alita.",
             instance_template="Fix the code in {{cwd}}",
             cost_limit=10.0,
         )
@@ -130,7 +130,7 @@ def run_demo():
     console.print(
         Panel.fit(
             "[bold green]Demo Completed Successfully![/bold green]\n"
-            "Team Battle Angels Agent X proved autonomous bug reproduction, patching, and verification.",
+            "Team Battle Angels Alita proved autonomous bug reproduction, patching, and verification.",
             border_style="green",
         )
     )

@@ -68,8 +68,8 @@ class RequestyModel:
         headers = {
             "Authorization": f"Bearer {self._api_key}",
             "Content-Type": "application/json",
-            "HTTP-Referer": "https://github.com/Yug-the-pirate-king/Team-Battle-Angels---Agent-X",
-            "X-Title": "Agent-X",
+            "HTTP-Referer": "https://github.com/Yug-the-pirate-king/Team-Battle-Angels---alita",
+            "X-Title": "alita",
         }
 
         payload = {

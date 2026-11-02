@@ -1,6 +1,6 @@
-"""Team Battle Angels - Agent X: Hello World Example.
+"""Team Battle Angels - Alita: Hello World Example.
 
-Simple python script demonstrating how to invoke Agent X programmatically.
+Simple python script demonstrating how to invoke Alita programmatically.
 """
 
 import logging

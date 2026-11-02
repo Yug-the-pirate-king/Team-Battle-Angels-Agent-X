@@ -1,4 +1,4 @@
-"""Team Battle Angels - Agent X: Autonomous AI Software Engineering Agent.
+"""Team Battle Angels - Alita: Autonomous AI Software Engineering Agent.
 
 This file provides:
 - Core protocols and interfaces for Model, Environment, and Agent
@@ -27,7 +27,7 @@ global_config_file = Path(global_config_dir) / ".env"
 if not os.getenv("MSWEA_SILENT_STARTUP"):
     Console().print(
         f"[bold cyan]======================================================================[/bold cyan]\n"
-        f"[bold yellow]             TEAM BATTLE ANGELS - AGENT X (v{__version__})[/bold yellow]\n"
+        f"[bold yellow]             Team Battle Angels - Alita (v{__version__})[/bold yellow]\n"
         f"[bold green]        Autonomous AI Software Engineering Agent for Hackathons[/bold green]\n"
         f"[bold cyan]======================================================================[/bold cyan]\n"
         f"Loading configuration from [bold green]'{global_config_file}'[/bold green]",

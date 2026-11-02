@@ -1,4 +1,4 @@
-# Team Battle Angels - Agent X Core Requirements
+# Team Battle Angels - Alita Core Requirements
 pydantic>=2.0
 pyyaml
 requests

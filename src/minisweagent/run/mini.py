@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-"""Run Battle Angels Agent X in your environment.
+"""Run Battle Angels Alita in your environment.
 Autonomous AI software engineering agent developed by Team Battle Angels for Hackathons.
 """
 
@@ -24,9 +24,9 @@ DEFAULT_CONFIG_FILE = Path(os.getenv("MSWEA_MINI_CONFIG_PATH", builtin_config_di
 DEFAULT_OUTPUT_FILE = global_config_dir / "last_run.traj.json"
 
 
-_HELP_TEXT = """Run mini-SWE-agent in your local environment. Powered by Team Battle Angels - Agent X.
+_HELP_TEXT = """Run mini-SWE-agent in your local environment. Powered by Team Battle Angels - Alita.
 
-[bold cyan]Team Battle Angels - Agent X[/bold cyan]
+[bold cyan]Team Battle Angels - Alita[/bold cyan]
 An autonomous, lightweight AI software engineering agent built for hackathon challenges.
 
 Examples:
@@ -83,7 +83,7 @@ def main(
     config = recursive_merge(*configs)
 
     if (run_task := config.get("run", {}).get("task", UNSET)) is UNSET:
-        console.print("[bold yellow]What coding challenge or task would you like Agent X to solve?[/bold yellow]")
+        console.print("[bold yellow]What coding challenge or task would you like Alita to solve?[/bold yellow]")
         run_task = _multiline_prompt()
         console.print("[bold green]Task received! Starting agent loop...[/bold green]")
 

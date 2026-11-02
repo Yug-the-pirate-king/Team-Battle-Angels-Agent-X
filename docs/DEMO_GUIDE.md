@@ -1,12 +1,12 @@
 # 🎬 Hackathon Demo Guide - Team Battle Angels
 
-This guide provides hackathon judges, mentors, and evaluators with a 2-minute live walkthrough of **Agent X** in action.
+This guide provides hackathon judges, mentors, and evaluators with a 2-minute live walkthrough of **Alita** in action.
 
 ---
 
 ## 🎯 Demo Scenario: Automated Bug Fix & Regression Test
 
-In this demonstration, Agent X:
+In this demonstration, Alita:
 1. Discovers a repository with a broken function.
 2. Formulates a hypothesis and reproduces the bug with a test script.
 3. Applies a targeted patch to the source code.
@@ -34,10 +34,10 @@ python run_demo.py
 
 ## 🎮 Running a Live Custom Task
 
-You can also point Agent X at any directory on your computer:
+You can also point Alita at any directory on your computer:
 
 ```bash
 battle-angels --task "Create a python script weather.py that queries wttr.in and displays ASCII weather for Tokyo" --yolo
 ```
 
-Watch Agent X write the code, run it in the terminal, verify the ASCII output, and submit!
+Watch Alita write the code, run it in the terminal, verify the ASCII output, and submit!

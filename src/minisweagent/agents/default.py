@@ -1,4 +1,4 @@
-"""Agent loop implementation for Team Battle Angels - Agent X.
+"""Agent loop implementation for Team Battle Angels - Alita.
 or https://minimal-agent.com for a tutorial on the basic building principles.
 """
 

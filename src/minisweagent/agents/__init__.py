@@ -1,4 +1,4 @@
-"""Agent implementations for Team Battle Angels - Agent X."""
+"""Agent implementations for Team Battle Angels - Alita."""
 
 import copy
 import importlib

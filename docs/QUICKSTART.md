@@ -1,8 +1,8 @@
-# 🚀 Quickstart Guide - Team Battle Angels: Agent X
+# 🚀 Quickstart Guide - Team Battle Angels: Alita
 
-Welcome to **Agent X**, the autonomous AI software engineering agent developed by **Team Battle Angels**.
+Welcome to **Alita**, the autonomous AI software engineering agent developed by **Team Battle Angels**.
 
-This guide will get you up and running with Agent X in under **2 minutes**.
+This guide will get you up and running with Alita in under **2 minutes**.
 
 ---
 
@@ -52,7 +52,7 @@ $env:OPENAI_API_KEY="your-api-key"
 
 ### Step 3: Run the Agent
 
-You have 3 easy ways to run Agent X:
+You have 3 easy ways to run Alita:
 
 #### Option A: Autonomous Mode (Recommended for Hackathon Tasks)
 Solve a coding task automatically without waiting for confirmation:
@@ -75,7 +75,7 @@ python run_demo.py
 
 ## 🔍 Inspecting Trajectories
 
-Agent X logs every decision, bash command, tool output, and code diff to a `.traj.json` file.
+Alita logs every decision, bash command, tool output, and code diff to a `.traj.json` file.
 You can view the full execution trajectory using the built-in inspector:
 
 ```bash

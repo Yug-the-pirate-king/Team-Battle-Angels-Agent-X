@@ -1,6 +1,6 @@
-# 🏛️ Architecture & Design - Battle Angels Agent X
+# 🏛️ Architecture & Design - Battle Angels Alita
 
-**Agent X** is built on a philosophy of **radical simplicity, determinism, and transparency**. Unlike bloated agent frameworks that drown the language model in complex abstractions, custom tool wrappers, and stateful shell daemon sessions, Agent X provides an ultra-lightweight, 100% controllable autonomous loop.
+**Alita** is built on a philosophy of **radical simplicity, determinism, and transparency**. Unlike bloated agent frameworks that drown the language model in complex abstractions, custom tool wrappers, and stateful shell daemon sessions, Alita provides an ultra-lightweight, 100% controllable autonomous loop.
 
 ---
 
@@ -23,7 +23,7 @@ flowchart TD
 
 ## 🧱 The 3 Pillars
 
-Agent X is modularized into three core protocols:
+Alita is modularized into three core protocols:
 
 ### 1. `Model` (LLM Interface)
 - **LiteLLM Backbone**: Direct connectivity to 100+ LLM providers (GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, DeepSeek, Mistral, Ollama).

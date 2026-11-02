@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-"""This is the central entry point for Battle Angels Agent X utility commands.
+"""This is the central entry point for Battle Angels Alita utility commands.
 Use subcommands to configure API keys, inspect trajectories, etc.
 """
 
@@ -17,7 +17,7 @@ subcommands = [
 
 def get_docstring() -> str:
     lines = [
-        "[bold cyan]Team Battle Angels - Agent X Utilities[/bold cyan]",
+        "[bold cyan]Team Battle Angels - Alita Utilities[/bold cyan]",
         "",
         "Available sub-commands:",
         "",

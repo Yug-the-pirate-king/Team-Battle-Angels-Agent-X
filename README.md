@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 Agent X | Team Battle Angels
+# 🚀 Alita | Team Battle Angels
 ### *An Autonomous, Ultra-Lightweight AI Software Engineering Agent*
 **Built for Hackathons & Rapid Codebase Problem Solving**
 
@@ -13,25 +13,25 @@
 
 ---
 
-## 💡 What is Agent X?
+## 💡 What is Alita?
 
-Developed by **Team Battle Angels**, **Agent X** is a high-performance, autonomous coding agent designed to diagnose, reproduce, edit, and fix real-world software bugs and feature requests.
+Developed by **Team Battle Angels**, **Alita** is a high-performance, autonomous coding agent designed to diagnose, reproduce, edit, and fix real-world software bugs and feature requests.
 
-Most contemporary AI coding agents are heavy monolithic systems with thousands of lines of fragile scaffolding, complex daemon processes, and vendor lock-in. **Agent X** asks: 
+Most contemporary AI coding agents are heavy monolithic systems with thousands of lines of fragile scaffolding, complex daemon processes, and vendor lock-in. **Alita** asks: 
 
 > *What if an AI software engineering agent was 100x simpler, started in milliseconds, ran on any computer, and still solved complex programming issues reliably?*
 
-Agent X strips out all unnecessary academic benchmark overhead and presents a streamlined, modular architecture that hackathon judges, developers, and teams can run immediately.
+Alita strips out all unnecessary academic benchmark overhead and presents a streamlined, modular architecture that hackathon judges, developers, and teams can run immediately.
 
 ---
 
 ## 🏗️ System Architecture & Workflow
 
-Agent X implements an intelligent, deterministic feedback loop where the LLM reasons, executes shell commands in stateless environments, inspects results, and iterates until the task is solved.
+Alita implements an intelligent, deterministic feedback loop where the LLM reasons, executes shell commands in stateless environments, inspects results, and iterates until the task is solved.
 
 ```mermaid
 flowchart TD
-    A["User Task / Problem Statement"] --> B["Agent X Core Engine"]
+    A["User Task / Problem Statement"] --> B["Alita Core Engine"]
     B --> C["LLM Reasoning (GPT-4o / Claude / Gemini / Ollama)"]
     C --> D{"Tool Action or Submit?"}
     
@@ -87,7 +87,7 @@ MSWEA_MODEL_NAME=openai/gpt-4o
 ```
 *(You can also set `ANTHROPIC_API_KEY`, `GEMINI_API_KEY`, or use local Ollama with zero keys!)*
 
-### 3. Run Agent X!
+### 3. Run Alita!
 
 ```bash
 # Solve a specific coding problem autonomously
@@ -122,7 +122,7 @@ python run_demo.py
 ## 📂 Simplified Project Structure
 
 ```text
-Agent X /
+Alita /
 ├── src/minisweagent/
 │   ├── __init__.py           # Team Battle Angels banner, version & core protocols
 │   ├── __main__.py           # Entrypoint for python -m minisweagent
@@ -137,7 +137,7 @@ Agent X /
 │   │   ├── litellm_model.py  # LiteLLM (GPT-4o, Claude, Gemini, Ollama)
 │   │   └── openrouter_model.py
 │   ├── run/
-│   │   ├── mini.py           # CLI entrypoint (battle-angels / agent-x)
+│   │   ├── mini.py           # CLI entrypoint (battle-angels / alita)
 │   │   ├── hello_world.py    # Minimal programmatic Python example
 │   │   └── utilities/        # Trajectory inspector & config manager
 │   └── utils/                # Logging & serialization helpers
@@ -161,7 +161,7 @@ Agent X /
 
 ## 💻 Python API Usage
 
-You can also embed Agent X into your own Python applications:
+You can also embed Alita into your own Python applications:
 
 ```python
 from minisweagent.agents.default import DefaultAgent
@@ -173,11 +173,11 @@ from pathlib import Path
 # Initialize model (OpenAI, Claude, Gemini, or Ollama)
 model = get_model(input_model_name="openai/gpt-4o")
 
-# Create Agent X instance
+# Create Alita instance
 agent = DefaultAgent(
     model=model,
     env=LocalEnvironment(),
-    system_template="You are Battle Angels Agent X.",
+    system_template="You are Battle Angels Alita.",
     instance_template="Solve this task: {{task}}",
 )
 
@@ -193,5 +193,5 @@ print(result["submission"])
 Developed with ❤️ for the Hackathon by **Team Battle Angels**.
 
 - **Team Name**: Battle Angels
-- **Project**: Agent X - Autonomous Software Engineering Agent
+- **Project**: Alita - Autonomous Software Engineering Agent
 - **License**: [MIT License](LICENSE.md)
